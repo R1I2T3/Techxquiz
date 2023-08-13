@@ -1,1 +1,12 @@
-@import url("style.scss");/*# sourceMappingURL=Question.css.map */
+@import url("style.scss");
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .app {
+  background-color: #fff;
+  margin: auto;
+  width: 350px;
+  height: 60vh;
+}/*# sourceMappingURL=Question.css.map */
