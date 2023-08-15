@@ -1,4 +1,5 @@
 class Quiz{
+    questions;
     questionElement=document.getElementById('Question')
     answerButton=document.getElementById('Answer')
     answerButton1=document.getElementById('Answer')
@@ -63,17 +64,19 @@ class Quiz{
     nextQuestion(){
     var isEnd=true;
     this.next.addEventListener("click",()=>{
-        if(this.currentQuestionIndex<questions.length){
+        if(this.currentQuestionIndex<this.questions.length){
             this.handleNextButton()
         }
         else{
-            this.StartQuiz()
+            let home=document.getElementById("home");
+            home.style.display="block";
+            home.style.color="white"
     }
 })
 }
     handleNextButton() {
         this.currentQuestionIndex++;
-        if(this.currentQuestionIndex<questions.length){
+        if(this.currentQuestionIndex<this.questions.length){
             this.showQuestion();
         }
         else{

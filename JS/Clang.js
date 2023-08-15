@@ -1,4 +1,4 @@
-import {Quiz} from "/script.js"
+import {Quiz} from "./script.js"
 const questions=[
     {
         question:"Compiler genrate ___ file",

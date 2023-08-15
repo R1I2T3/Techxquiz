@@ -52,7 +52,7 @@
 .content .app .quiz #Answer .btn:disabled{
   cursor: no-drop;
 }
-#next-btn {
+.change {
   background-color: #001e4d;
   color: #fff;
   font-weight: 500px;
@@ -62,9 +62,16 @@
   margin: 20px auto;
   border-radius: 10px;
   cursor: pointer;
+}
+#next-btn{
   display: none;
 }
-
+#home{
+  background-color: wheat;
+  display: none;
+  text-decoration: none;
+  color: #fff;
+}
 .content .app .quiz #Answer .correct{
   background-color: green;
   color: white;

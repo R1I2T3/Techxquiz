@@ -1,9 +1,9 @@
-import {Quiz}  from "/script.js";
+import {Quiz}  from "./script.js";
 const questions=[
     {
-        question:"Who created java",
+        question:"Where java was created",
         answers:[
-            {text:"Sun microsystem",correct:"True"},
+            {text:"Sun Microsystem",correct:"true"},
             {text:"Oracle",correct:"false"},
             {text:"Microsoft",correct:"false"},
             {text:"None of the Above",correct:"false"},
@@ -21,72 +21,72 @@ const questions=[
     {
         question:" How many keywords in are in java ____________",
         answers:[
-            {text:"LowerCase letters",correct:"true"},
-            {text:"UpperCase letters",correct:"false"},
-            {text:"CamelCase letters",correct:"false"},
-            {text:" None of the mentioned",correct:"false"},
+            {text:"51",correct:"true"},
+            {text:"80",correct:"false"},
+            {text:"500",correct:"false"},
+            {text:" 35",correct:"false"},
         ]
     },
     {
-        question:"What type of language java is",
+        question:"Which of the below is valid way to instantiate an array in java?",
         answers:[
-            {text:"Compiled",correct:"false"},
-            {text:"Interpreted",correct:"false"},
-            {text:"Both compiled and interpreted",correct:"true"},
-            {text:"none",correct:"false"},
+            {text:"int myArray [] = {1, 3, 5};",correct:"false"},
+            {text:"int myArray [] [] = {1,2,3,4};",correct:"false"},
+            {text:"int [] myArray = (5, 4, 3);",correct:"true"},
+            {text:"int [] myArray = {“1”, “2”, “3”};",correct:"false"},
         ]
     },
     {
-        question:"Which is valid C expression?",
+        question:"Which of the below are reserved keyword in Java?",
         answers:[
-            {text:"int my_num = 100,000;",correct:"false"},
-            {text:"int my_num = 100000;",correct:"true"},
-            {text:"int my num = 1000;",correct:"false"},
-            {text:"int $my_num = 10000;",correct:"false"},
+            {text:"array",correct:"false"},
+            {text:"goto",correct:"false"},
+            {text:"null",correct:"false"},
+            {text:"int",correct:"true"},
         ]
     },
     {
-        question:"Which keyword is used to prevent any changes in the variable within a C program?",
+        question:"What are the valid statements for static keyword in Java?",
         answers:[
-            {text:"immutable",correct:"false"},
-            {text:"mutable",correct:"false"},
-            {text:"const",correct:"true"},
-            {text:"volatile",correct:"false"},
+            {text:"We can have static block in a class.",correct:"true"},
+            {text:"The static block in a class is executed every time an object of class is created.",correct:"false"},
+            {text:"We can have static method implementations in interface.",correct:"false"},
+            {text:"We can define static block inside a method.",correct:"false"},
         ]
     },
     {
-        question:" What is the result of logical or relational expression in C?",
+        question:" Select all the core concepts of OOPS.",
         answers:[
-            {text:"True or False",correct:"false"},
-            {text:"0 or 1",correct:"true"},
-            {text:"0 if an expression is false and any positive number if an expression is true",correct:"false"},
-            {text:"None of the mentioned",correct:"false"},
+            {text:"Abstraction",correct:"false"},
+            {text:"Inheritance",correct:"false"},
+            {text:"Interface",correct:"false"},
+            {text:"All of the above",correct:"true"},
         ]
     },
     {
-        question:"Which of the following cannot be a variable name in C?",
+        question:"Which of the following can be a variable name in Java?",
         answers:[
-            {text:"volatile",correct:"true"},
+            {text:"bool",correct:"false"},
             {text:"true",correct:"false"},
             {text:"friend",correct:"false"},
-            {text:"export",correct:"false"},
+            {text:"import",correct:"false"},
         ]
     },
     {
-        question:"Which of the following declaration is not supported by C language?",
+        question:"Which of the following statements are true for inheritance in Java?",
         answers:[
-            {text:"String str;",correct:"true"},
-            {text:"char *str;",correct:"false"},
-            {text:"float str = 3e2;",correct:"false"},
-            {text:"Both “String str;” and “float str = 3e2;”",correct:"false"},
+            {text:" The “extend” keyword is used to extend a class in java.",correct:"false"},
+            {text:"You can extend multiple classes in java.",correct:"false"},
+            {text:"Private members of the superclass are accessible to the subclass.",correct:"false"},
+            {text:"We can’t extend Final classes in java.",correct:"true"},
         ]
     },
     {
-        question:"What is an example of iteration in C?",
+        question:"Which of the below are unchecked exceptions in java?",
         answers:[
-            {text:"for",correct:"false"},
-            {text:"while",correct:"false"},
-            {text:"do-while",correct:"false"},
+            {text:"RuntimeException",correct:"false"},
+            {text:"ClassCastException",correct:"false"},
+            {text:"NullPointerException",correct:"false"},
             {text:"All of the above",correct:"true"},
         ]
     },
