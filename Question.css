@@ -1,0 +1,76 @@
+@import url("style.scss");
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .app {
+  border-radius: 40px;
+  background-color: white;
+  color: #001e4d;
+  font-weight: 600;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+.content .app h2 {
+  color: #001e1d;
+  font-weight: 600;
+  font-size: 30px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.content .app .quiz {
+  padding: 20px 0;
+}
+.content .app .quiz h3 {
+  padding: 20px;
+  font-size: 22x;
+  font-weight: 400px;
+}
+.content .app .quiz #Answer .btn {
+  background-color: white;
+  color: #222;
+  font-weight: 500px;
+  width: 90%;
+  border: 1px solid black;
+  height: 40px;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: 1s;
+}
+.content .app .quiz #Answer .btn:hover:not([disabled]) {
+  background-color: #222;
+  color: white;
+}
+.content .app .quiz #Answer .btn:disabled{
+  cursor: no-drop;
+}
+#next-btn {
+  background-color: #001e4d;
+  color: #fff;
+  font-weight: 500px;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.content .app .quiz #Answer .correct{
+  background-color: green;
+  color: white;
+}
+
+
+.content .app .quiz #Answer .incorrect {
+  background-color: rgb(243, 9, 9);
+}
