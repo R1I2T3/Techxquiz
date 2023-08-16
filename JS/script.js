@@ -91,7 +91,7 @@ class Quiz{
     showScore() {
         this.resetState();
         console.log(this.score)
-        this.questionElement.innerHTML=`Score scored by participant will be: ${Quiz.total_score*10} out of {100}!`
+        this.questionElement.innerHTML=`Score scored by participant will be: ${Quiz.total_score*10} out of ${10*10}!`
         this.next.innerHTML="Play Again"
         this.next.style.display="block"
 }
