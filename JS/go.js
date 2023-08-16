@@ -37,7 +37,7 @@ const questions=[
         ]
     },
     {
-        question:"WWhich of the following function returns the total number of elements present in a slice?",
+        question:"Which of the following function returns the total number of elements present in a slice?",
         answers:[
             {text:"ten()",correct:"false"},
             {text:"size()",correct:"true"},
