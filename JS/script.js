@@ -37,28 +37,32 @@ class Quiz{
             answer.removeChild(answer.firstChild)
         }
     }
+    static total_score=0
     selectAnswer(e) {
         var score=0;
         var answerButton=document.getElementById('Answer')
         var next=document.getElementById("next-btn")
         const selectedButton= e.target;
         const isCorrect=selectedButton.dataset.correct==="true";
-        var score=0;
+        var s=0;
         if(isCorrect){
             selectedButton.classList.add("correct");
-            score++;
+            s++;
+            Quiz.total_score+=s;
         }
         else{
             selectedButton.classList.add("incorrect");
-            score-=0.5
+            s=s;
         }
         this.answerButton
         Array.from(answerButton.children).forEach(button=>{
             if(button.dataset.correct==='true'){
                 button.classList.add("correct");
+                
             }
             button.disabled=true;
         });
+        console.log(Quiz.total_score)
         next.style.display="block";
     }
     nextQuestion(){
@@ -80,12 +84,14 @@ class Quiz{
             this.showQuestion();
         }
         else{
+            this.score=Number.parseInt(document.getElementsByClassName("score").innerHTML)
             this.showScore();
         }
     }
     showScore() {
         this.resetState();
-        this.questionElement.innerText=`Your score ${this.score*10} out of ${this.questions.length*10} !`
+        console.log(this.score)
+        this.questionElement.innerHTML=`Score scored by participant will be: ${Quiz.total_score*10} out of {100}!`
         this.next.innerHTML="Play Again"
         this.next.style.display="block"
 }
