@@ -66,8 +66,19 @@
 #next-btn{
   display: none;
 }
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #home{
-  background-color: wheat;
+  background-color: #001e4d;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 50px;
+  margin: auto 150px;
   display: none;
   text-decoration: none;
   color: #fff;
