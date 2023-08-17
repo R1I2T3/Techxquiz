@@ -39,7 +39,7 @@ header h1 {
   width: 300px;
   border-radius: 50px;
 }
-.content ul li button a {
+.content ul li a button  {
   color: #331d2c;
   font-size: 25px;
   text-decoration: none;
